@@ -1,0 +1,31 @@
+{
+    "compilerOptions": {
+        "module": "ES2015",
+        "moduleResolution": "node",
+        "target": "ESNext",
+        "lib": [
+            "DOM",
+            "ES6",
+            "ESNext"
+        ],
+        "sourceMap": false,
+        "declaration": false,
+        "newLine": "LF",
+        "allowJs": true,
+        "experimentalDecorators": true,
+        "skipLibCheck": true,
+        "esModuleInterop": true,
+        "noImplicitAny": true,
+        "resolveJsonModule": true,
+        "downlevelIteration": true,
+        "isolatedModules": true,
+        "types": [
+            "vite/client"
+        ],
+        "strict": true
+    },
+    "exclude": [
+        "node_modules",
+        "vite.config.ts"
+    ]
+}

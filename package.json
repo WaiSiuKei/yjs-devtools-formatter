@@ -1,0 +1,49 @@
+{
+    "name": "yjs-devtools-formatter",
+    "version": "0.0.4",
+    "description": "Chrome Dev Tools formatter for the Yjs data types",
+    "files": [
+        "dist"
+    ],
+    "scripts": {
+        "build": "vite build",
+        "prepublish": "npm run-script build"
+    },
+    "keywords": [
+        "yjs",
+        "devtools",
+        "chrome"
+    ],
+    "author": "Wai Siu Kei",
+    "license": "MIT",
+    "devDependencies": {
+        "typescript": "^5.3.3",
+        "vite": "^5.0.11",
+        "vite-plugin-checker": "^0.6.2"
+    },
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/waisiukei/yjs-devtools-formatter"
+    },
+    "peerDependencies": {
+        "yjs": "*"
+    },
+    "type": "module",
+    "module": "./dist/index.mjs",
+    "main": "./dist/index.umd.js",
+    "typings": "./src/type.d.ts",
+    "exports": {
+        ".": {
+            "import": {
+                "development": "./src",
+                "default": "./dist/index.mjs"
+            }
+        }
+    },
+    "maintainers": [
+        {
+            "name": "Wai Siu Kei",
+            "email": "wakiki@outlook.com"
+        }
+    ]
+}
